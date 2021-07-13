@@ -1,9 +1,8 @@
 def main():
    E = [10,10,7,10]
-   D = [6,4,2,4]
-   
+   D = [6,4,2,4] #disponiveis
    A = [[2,2,3,2], [0,2,1,2], [2,2,1,2], [0,0,2,0]]
-   R = [[5,0,2,0], [2,5,0,2], [3,2,0,2], [2,0,1,0]]
+   R = [[5,0,2,0], [2,5,0,2], [3,2,0,2], [2,0,1,0]] #Requisicoes
 
    iniciar(D,R,A,E)
 
@@ -17,7 +16,7 @@ def iniciar(D, R, A, E):
          D[1] += A[i-1][1]
          D[2] += A[i-1][2]
          D[3] += A[i-1][3]
-      flag = 0 
+      flag = 0
 
       for j in range(len(D)): #faz quatro vezes
          if R[j][flag] - A[j][flag] <= D[flag]: #os quatro tem que ser menor pra +=
