@@ -28,7 +28,7 @@ def iniciar(D, R, A, E):
 
 def deadlock(D,E):
    for i in range(0,len(D)): #ao final disponíveis tem que ser == existentes
-      if D[i] == E[i]:
+      if D[i] != E[i]:
          print(f'\n Processo {i} COM deadlock')
          break
       print(f'\n Processo {i} SEM deadlock')
