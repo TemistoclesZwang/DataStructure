@@ -1,5 +1,5 @@
 # DataStructure
-### Repository created to put some data structure activities and algorithms
+### Repository created to put some data structure activities
 You will find here:
 
 >   **Binary tree**
